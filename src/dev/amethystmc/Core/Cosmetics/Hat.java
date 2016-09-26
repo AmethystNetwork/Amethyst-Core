@@ -1,6 +1,6 @@
 package dev.amethystmc.Core.Cosmetics;
 
-import dev.amethystmc.Core.Ranks.Rank;
+import dev.amethystmc.Core.Database.Players.Rank;
 import org.bukkit.Material;
 
 /**
@@ -11,7 +11,7 @@ public enum Hat
 
     GLASS("Glass", "&dGlass Hat", Material.GLASS, Rank.PREMIUM, 10),
     SPONGE("Sponge", "&dSponge Hat", Material.SPONGE, Rank.PREMIUM, 11),
-    CACTUS("Cactus", "&Cactus Hat", Material.CACTUS, Rank.PREMIUM, 12);
+    CACTUS("Cactus", "&Cactus Hat", Material.CACTUS, Rank.PREMIUM, 12), ;
 
     String name;
     String displayName;

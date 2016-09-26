@@ -1,7 +1,7 @@
-package dev.amethystmc.Core.Ranks;
+package dev.amethystmc.Core.Database.Players;
 
 /**
- * Created by Ben on 9/25/2016.
+ * Created by Ben on 9/26/2016.
  */
 public enum Rank
 {
