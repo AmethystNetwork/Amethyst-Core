@@ -1,12 +1,11 @@
 package dev.amethystmc.Core.Interfaces.CosmeticInterfaces;
 
-import dev.amethystmc.Core.Utils.InterfacePageUtils.Page;
-import dev.amethystmc.Core.Utils.InterfacePageUtils.PageData;
-import dev.amethystmc.Core.Utils.InterfacePageUtils.Pages;
+import dev.amethystmc.Core.Cosmetics.Hat;
 import dev.amethystmc.Core.Utils.InterfaceUtil;
 import dev.amethystmc.Core.Utils.ItemUtil;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
+import org.bukkit.Sound;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 
@@ -29,12 +28,11 @@ public class HatInterface extends InterfaceUtil
 
         inv.setItem(40, ItemUtil.createItem(Material.ARROW, "&dNext Page"));
 
-        Page page = Pages.pages.get(0);
 
-        for (PageData data : page.getItems())
+        for (Hat hat : Hat.values())
         {
 
-            inv.setItem(data.getSlot(), data.getStack());
+            inv.setItem(hat.getSlot(), hat.getStack());
 
         }
 
@@ -49,32 +47,9 @@ public class HatInterface extends InterfaceUtil
         switch (slot) {
 
             case 40:
-                int pages = 1;
-                Page page = null;
-
-                if (!(Pages.pages.size() >= pages))
-                {
-                    p.closeInventory();
-                    return;
-                }
-
-                page = Pages.pages.get(pages - 1);
-
-                Inventory inv = Bukkit.createInventory(p, 45, "Hats");
-                inv.setItem(39, ItemUtil.createItem(Material.ARROW, "&dPrevious Page"));
-                inv.setItem(41, ItemUtil.createItem(Material.ARROW, "&dNext Page"));
-
-                for (PageData data : page.getItems())
-                {
-
-                    inv.setItem(data.getSlot(), data.getStack());
-
-                }
-
-                p.openInventory(inv);
+                p.playSound(p.getLocation(), Sound.DOOR_CLOSE, 10, 10);
+                p.closeInventory();
                 break;
-            case 39:
-                open(p);
         }
 
     }

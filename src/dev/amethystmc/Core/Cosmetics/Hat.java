@@ -25,9 +25,7 @@ public enum Hat
     BEDROCK("Bedrock", ItemUtil.createItem(Material.BEDROCK, "&dBedrock Hat", "&7Requires Rank:" + Rank.PREMIUM.getPrefix()), Rank.PREMIUM, 30),
     OBSIDIAN("Obsidian", ItemUtil.createItem(Material.OBSIDIAN, "&dObsidian Hat", "&7Requires Rank:" + Rank.PREMIUM.getPrefix()), Rank.PREMIUM, 31),
     GLOWSTONE("GlowStone", ItemUtil.createItem(Material.GLOWSTONE, "&dGlowstone Hat", "&7Requires Rank:" + Rank.PREMIUM.getPrefix()), Rank.PREMIUM, 32),
-    REDSTONE("Redstone", ItemUtil.createItem(Material.REDSTONE_BLOCK, "&dRedstone Hat", "&7Requires Rank:" + Rank.PREMIUM.getPrefix()), Rank.PREMIUM, 33),
-    MELON("Melon", ItemUtil.createItem(Material.MELON_BLOCK, "&dMelon Hat", "&7Requires Rank:" + Rank.PREMIUM.getPrefix()), Rank.PREMIUM, 11),
-    ICE("Ice", ItemUtil.createItem(Material.ICE, "&dIce Hat", "&7Requires Rank:" + Rank.PREMIUM.getPrefix()), Rank.PREMIUM, 12);
+    REDSTONE("Redstone", ItemUtil.createItem(Material.REDSTONE_BLOCK, "&dRedstone Hat", "&7Requires Rank:" + Rank.PREMIUM.getPrefix()), Rank.PREMIUM, 33);
 
     String name;
     ItemStack stack;

@@ -1,9 +1,7 @@
 package dev.amethystmc.Core;
 
 import dev.amethystmc.Core.Commands.DebugCommand;
-import dev.amethystmc.Core.Cosmetics.Hat;
 import dev.amethystmc.Core.Listeners.InventoryClickListener;
-import dev.amethystmc.Core.Utils.InterfacePageUtils.Pages;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -23,7 +21,6 @@ public class Core extends JavaPlugin
         instance = this;
         registerListeners();
         registerCommands();
-        registerHats();
 
     }
 
@@ -40,18 +37,6 @@ public class Core extends JavaPlugin
 
         DebugCommand debugCommand = new DebugCommand("Debug", "debug", "Debug Command");
         debugCommand.register();
-
-    }
-
-    public void registerHats()
-    {
-
-        for (Hat hat : Hat.values())
-        {
-
-            Pages.register(hat.getStack(), hat.getSlot());
-
-        }
 
     }
 
