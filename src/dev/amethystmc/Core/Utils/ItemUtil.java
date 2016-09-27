@@ -3,6 +3,7 @@ package dev.amethystmc.Core.Utils;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
+import org.bukkit.inventory.meta.SkullMeta;
 import org.bukkit.potion.Potion;
 import org.bukkit.potion.PotionType;
 
@@ -125,6 +126,42 @@ public class ItemUtil
         Potion pot = new Potion(type);
         pot.setSplash(splash);
         return pot.toItemStack(1);
+    }
+
+    public static ItemStack createSkull(String name, String displayName)
+    {
+
+        ItemStack item = new ItemStack(Material.SKULL_ITEM, 1, (byte) 3);
+        SkullMeta meta = (SkullMeta) item.getItemMeta();
+
+        meta.setOwner(name);
+        meta.setDisplayName(MessageUtil.colorize(displayName));
+
+        item.setItemMeta(meta);
+
+        return item;
+    }
+
+    public static ItemStack createSkull(String name, String displayName, String... lore)
+    {
+
+        ItemStack item = new ItemStack(Material.SKULL_ITEM, 1, (byte) 3);
+        SkullMeta meta = (SkullMeta) item.getItemMeta();
+
+        List<String> lores = new ArrayList<>();
+        for (String aLore : lore)
+        {
+            lores.add(MessageUtil.colorize(aLore));
+        }
+
+        meta.setOwner(name);
+        meta.setDisplayName(MessageUtil.colorize(displayName));
+        meta.setLore(lores);
+
+
+        item.setItemMeta(meta);
+
+        return item;
     }
 }
 

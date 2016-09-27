@@ -1,0 +1,6 @@
+name: Amethyst Core
+main: dev.amethystmc.Core.Core
+authors: [DevGolem]
+version: 1.0
+description: AmethystMC Core Plugin
+website: AmethystMC.com

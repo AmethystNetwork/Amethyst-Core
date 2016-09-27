@@ -44,7 +44,7 @@ public class MessageUtil
         for (String message : msg)
         {
 
-            p.sendMessage(PREFIX + message);
+            p.sendMessage(PREFIX + colorize(message));
 
         }
 
@@ -56,7 +56,7 @@ public class MessageUtil
         for (String message : msg)
         {
 
-            sender.sendMessage(PREFIX + message);
+            sender.sendMessage(PREFIX + colorize(message));
 
         }
 
@@ -68,7 +68,7 @@ public class MessageUtil
     for (String message : msg)
     {
 
-        p.sendMessage(DEV_PREFIX + message);
+        p.sendMessage(DEV_PREFIX + colorize(message));
 
     }
 
@@ -80,7 +80,7 @@ public class MessageUtil
         for (String message : msg)
         {
 
-            sender.sendMessage(DEV_PREFIX + message);
+            sender.sendMessage(DEV_PREFIX + colorize(message));
 
         }
 
@@ -96,7 +96,7 @@ public class MessageUtil
 
             if (ap.isStaffChatEnabled()) {
 
-                p.sendMessage(STAFF_PREFIX + message);
+                p.sendMessage(STAFF_PREFIX + colorize(message));
             }
 
         }
