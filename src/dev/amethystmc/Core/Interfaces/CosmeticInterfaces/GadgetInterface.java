@@ -1,5 +1,6 @@
 package dev.amethystmc.Core.Interfaces.CosmeticInterfaces;
 
+import dev.amethystmc.Core.Cosmetics.Gadget;
 import dev.amethystmc.Core.Cosmetics.Hat;
 import dev.amethystmc.Core.Interfaces.Interfaces;
 import dev.amethystmc.Core.Utils.InterfaceUtil;
@@ -11,29 +12,29 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 
 /**
- * Created by Ben on 9/26/2016.
+ * Created by Ben on 9/27/2016.
  */
-public class HatInterface extends InterfaceUtil
+public class GadgetInterface extends InterfaceUtil
 {
 
 
     @Override
     public String getName() {
-        return "Hats";
+        return "Gadgets";
     }
 
     @Override
     public void open(Player p) {
 
-        Inventory inv = Bukkit.createInventory(p, 54, getName());
+        Inventory inv = Bukkit.createInventory(p, 45, getName());
 
-        inv.setItem(49, ItemUtil.createItem(Material.WOOD_DOOR, "&aGo Back"));
+        inv.setItem(40, ItemUtil.createItem(Material.WOOD_DOOR, "&aGo Back"));
 
 
-        for (Hat hat : Hat.values())
+        for (Gadget gadget : Gadget.values())
         {
 
-            inv.setItem(hat.getSlot(), hat.getStack());
+            inv.setItem(gadget.getSlot(), gadget.getStack());
 
         }
 
@@ -47,7 +48,7 @@ public class HatInterface extends InterfaceUtil
 
         switch (slot) {
 
-            case 49:
+            case 40:
                 p.playSound(p.getLocation(), Sound.DOOR_CLOSE, 10, 10);
                 Interfaces.getCosmeticInterface().open(p);
                 break;

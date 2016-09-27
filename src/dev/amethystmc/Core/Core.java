@@ -1,6 +1,8 @@
 package dev.amethystmc.Core;
 
 import dev.amethystmc.Core.Commands.DebugCommand;
+import dev.amethystmc.Core.Cosmetics.ArrowTrails.Listeners.ProjectileLaunchListener;
+import dev.amethystmc.Core.Cosmetics.ArrowTrails.Trail;
 import dev.amethystmc.Core.Listeners.InventoryClickListener;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
@@ -21,6 +23,7 @@ public class Core extends JavaPlugin
         instance = this;
         registerListeners();
         registerCommands();
+        Trail.startArrows();
 
     }
 
@@ -29,6 +32,7 @@ public class Core extends JavaPlugin
 
         PluginManager pm = Bukkit.getPluginManager();
         pm.registerEvents(new InventoryClickListener(), this);
+        pm.registerEvents(new ProjectileLaunchListener(), this);
 
     }
 

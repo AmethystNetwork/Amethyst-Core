@@ -26,8 +26,7 @@ public class DebugCommand extends CommandUtil
         {
 
             Player p = (Player) sender;
-            Interfaces.getHatInterface().open(p);
-            MessageUtil.sendDeveloperMessage(p, "&eNow Debugging!");
+            Interfaces.getCosmeticInterface().open(p);
 
         }
 

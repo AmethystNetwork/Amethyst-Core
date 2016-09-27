@@ -20,7 +20,15 @@ public class InventoryClickListener implements Listener
         int slot = e.getRawSlot();
         String name = e.getInventory().getName();
 
-        if (name.equalsIgnoreCase(Interfaces.getHatInterface().getName()))
+        if (name.equalsIgnoreCase(Interfaces.getCosmeticInterface().getName()))
+        {
+
+        e.setCancelled(true);
+        Interfaces.getCosmeticInterface().click(p, slot);
+
+        }
+
+        else if (name.equalsIgnoreCase(Interfaces.getHatInterface().getName()))
         {
 
             e.setCancelled(true);
@@ -28,7 +36,29 @@ public class InventoryClickListener implements Listener
 
         }
 
-    }
+        else if (name.equalsIgnoreCase(Interfaces.getGadgetInterface().getName()))
+        {
 
+            e.setCancelled(true);
+            Interfaces.getGadgetInterface().click(p, slot);
+
+        }
+
+        else if (name.equalsIgnoreCase(Interfaces.getTagInterface().getName()))
+        {
+
+            e.setCancelled(true);
+            Interfaces.getTagInterface().click(p, slot);
+
+        }
+
+        else if (name.equalsIgnoreCase(Interfaces.getTrailInterface().getName()))
+        {
+
+            e.setCancelled(true);
+            Interfaces.getTrailInterface().click(p, slot);
+
+        }
+    }
 }
 
