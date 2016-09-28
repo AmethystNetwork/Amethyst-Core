@@ -26,7 +26,7 @@ public class CosmeticInterface extends InterfaceUtil
 
         Inventory inv = Bukkit.createInventory(p, 54, getName());
 
-        inv.setItem(49, ItemUtil.createSkull(p.getName(), "&eCosmetic Info", "&cComing Soon..."));
+        inv.setItem(49, ItemUtil.createSkull(p.getName(), "&a&l&nCosmetic Info", "&c&nComing Soon..."));
 
 
         for (Cosmetic cosmetic : Cosmetic.values())
