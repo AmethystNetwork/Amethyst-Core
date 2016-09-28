@@ -11,7 +11,7 @@ import org.bukkit.inventory.ItemStack;
 public enum DeathMessage
 {
 
-    YOU_GOT_ME_THIS_TIME("You got me this time", "&bYou got me this time.", ItemUtil.createItem(Material.ANVIL, "&bYou got me this time!"), Rank.PREMIUM, 11);
+    YOU_GOT_ME_THIS_TIME("You got me this time", "&bYou got me this time!", ItemUtil.createItem(Material.ANVIL, "&bYou got me this time!"), Rank.PREMIUM, 11);
 
     String name;
     String deathMessage;
