@@ -11,6 +11,10 @@ import org.bukkit.inventory.ItemStack;
 public enum DeathMessage
 {
 
+    /*
+    TODO Have Pat remove this message
+     */
+
     YOU_GOT_ME_THIS_TIME("You got me this time", "&bYou got me this time.", ItemUtil.createItem(Material.ANVIL, "&bYou got me this time!"), Rank.PREMIUM, 11);
 
     String name;
