@@ -8,11 +8,8 @@ import org.bukkit.inventory.ItemStack;
 /**
  * Created by Ben on 9/27/2016.
  */
-public enum Cosmetic {
-
-    /*
-    TODO Add Wardrobe, Pets, Particles,
-     */
+public enum Cosmetic
+{
 
     HATS("Hats", ItemUtil.createItem(Material.BEACON, "&eHats", "&7Get cool hats", "&7to wear around the whole network!"), Rank.PREMIUM, 11),
     GADGETS("Gadgets", ItemUtil.createItem(Material.FIREWORK, "&eGadgets", "&7Throw a party in the lobby with", "&7some of these super cool", "&7gadgets!"), Rank.PREMIUM, 12),

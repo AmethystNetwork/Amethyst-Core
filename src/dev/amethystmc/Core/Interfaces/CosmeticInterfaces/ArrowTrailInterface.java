@@ -110,7 +110,7 @@ public class ArrowTrailInterface extends InterfaceUtil
                 MessageUtil.sendRawMessage(p, "&cYou have removed your trail");
                 break;
             case 40:
-                p.playSound(p.getLocation(), Sound.NOTE_PLING, 10, 10);
+                p.playSound(p.getLocation(), Sound.DOOR_CLOSE, 10, 10);
                 Interfaces.getCosmeticInterface().open(p);
                 break;
 
