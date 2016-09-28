@@ -2,7 +2,6 @@ package dev.amethystmc.Core.Commands;
 
 import dev.amethystmc.Core.Interfaces.Interfaces;
 import dev.amethystmc.Core.Utils.CommandUtil;
-import dev.amethystmc.Core.Utils.MessageUtil;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
