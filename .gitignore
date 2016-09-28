@@ -47,7 +47,11 @@ Temporary Items
 .apdisk
 *.xml
 Amethyst Core.iml
+<<<<<<< HEAD
 .idea/.name
 Amethyst-Core.iml
 src/.idea/.name
 src/.idea/src.iml
+=======
+*.iml
+>>>>>>> origin/master
