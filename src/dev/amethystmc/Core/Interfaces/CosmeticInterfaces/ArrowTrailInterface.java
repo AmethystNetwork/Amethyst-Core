@@ -2,7 +2,6 @@ package dev.amethystmc.Core.Interfaces.CosmeticInterfaces;
 
 import dev.amethystmc.Core.Cosmetics.ArrowTrail;
 import dev.amethystmc.Core.Cosmetics.ArrowTrails.Trail;
-import dev.amethystmc.Core.Cosmetics.Cosmetic;
 import dev.amethystmc.Core.Interfaces.Interfaces;
 import dev.amethystmc.Core.Utils.InterfaceUtil;
 import dev.amethystmc.Core.Utils.ItemUtil;
