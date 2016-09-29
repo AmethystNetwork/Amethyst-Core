@@ -1,5 +1,6 @@
 package dev.amethystmc.Core.Database.Players;
 
+import dev.amethystmc.Core.Cosmetics.*;
 import dev.amethystmc.Core.Database.DatabaseConnection;
 import dev.amethystmc.Core.Utils.MessageUtil;
 import org.bukkit.entity.Player;
@@ -15,18 +16,31 @@ import java.util.UUID;
  */
 public class AmethystPlayer {
 
-    DatabaseConnection dbconnection = new DatabaseConnection();
+    //DatabaseConnection dbconnection = new DatabaseConnection();
     Player p;
     List<Player> staffChat = new ArrayList<>();
     List<String> staffMembers = new ArrayList<>();
 
-    public AmethystPlayer(Player p) {
+    private Hat hat;
+    private Gadget gadget;
+    private Tag tag;
+    private ArrowTrail trail;
+    private DeathMessage deathMessage;
+
+    public AmethystPlayer(Player p)
+    {
 
         this.p = p;
 
+        this.hat = Hat.NONE;
+        this.gadget = Gadget.NONE;
+        this.tag = Tag.NONE;
+        this.trail = ArrowTrail.NONE;
+        this.deathMessage = DeathMessage.NONE;
+
     }
 
-    public Rank getRank() {
+    /*public Rank getRank() {
         UUID uuid = p.getUniqueId();
 
         try {
@@ -115,7 +129,7 @@ public class AmethystPlayer {
         return false;
     }
 
-    public String getTag() {
+    public String getTagFromSQL() {
         UUID uuid = p.getUniqueId();
 
         try {
@@ -131,7 +145,7 @@ public class AmethystPlayer {
     }
 
 
-    public void setTag(String tag) {
+    public void setTagInSQL(String tag) {
         UUID uuid = p.getUniqueId();
 
         if (!hasTag()) {
@@ -238,6 +252,76 @@ public class AmethystPlayer {
             return false;
 
         }
+    }*/
+
+    public void setHat(Hat hat)
+    {
+
+        this.hat = hat;
+
+    }
+
+    public Hat getHat()
+    {
+
+        return hat;
+
+    }
+
+    public void setGadget(Gadget gadget)
+    {
+
+        this.gadget = gadget;
+
+    }
+
+    public Gadget getGadget()
+    {
+
+        return gadget;
+
+    }
+
+    public void setTag(Tag tag)
+    {
+
+        this.tag = tag;
+
+    }
+
+    public Tag getTag()
+    {
+
+        return tag;
+
+    }
+
+    public void setTrail(ArrowTrail trail)
+    {
+
+        this.trail = trail;
+
+    }
+
+    public ArrowTrail getTrail()
+    {
+
+        return trail;
+
+    }
+
+    public void setDeathMessage(DeathMessage deathMessage)
+    {
+
+        this.deathMessage = deathMessage;
+
+    }
+
+    public DeathMessage getDeathMessage()
+    {
+
+        return deathMessage;
+
     }
 
 }

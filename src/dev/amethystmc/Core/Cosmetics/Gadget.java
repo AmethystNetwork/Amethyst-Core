@@ -17,7 +17,8 @@ public enum Gadget
     TNT_FOUNTAIN("TnT Fountain", ItemUtil.createItem(Material.TNT, "&dTnT Fountain"), Rank.PREMIUM, 14),
     EXPLOSIVE_BOW("Explosive Bow", ItemUtil.createItem(Material.BOW, "&dExplosive Bow"), Rank.PREMIUM, 15),
     FLYING_PIG("Flying Pig", ItemUtil.createItem(Material.SADDLE, "&dFlying Pig"), Rank.PREMIUM, 20),
-    FIREWORK("Firework", ItemUtil.createItem(Material.FIREWORK, "&dFirework"), Rank.PREMIUM, 21);
+    FIREWORK("Firework", ItemUtil.createItem(Material.FIREWORK, "&dFirework"), Rank.PREMIUM, 21),
+    NONE("None", ItemUtil.createItem(Material.AIR), Rank.MEMBER, 32);
 
     String name;
     ItemStack stack;

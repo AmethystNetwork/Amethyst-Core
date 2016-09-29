@@ -20,7 +20,8 @@ public enum ArrowTrail
     HEART("Heart", ItemUtil.createItem(Material.REDSTONE, "&dHeart Trail"), Rank.PREMIUM, 21),
     EMERALD("Emerald", ItemUtil.createItem(Material.EMERALD, "&dEmerald Trail"), Rank.PREMIUM, 22),
     ENCHANTMENT("Enchantment", ItemUtil.createItem(Material.EXP_BOTTLE, "&dEnchantment Trail"), Rank.PREMIUM, 23),
-    REMOVE("Remove", ItemUtil.createItem(Material.BARRIER, "&cRemove Trail"), Rank.MEMBER, 24);
+    REMOVE("Remove", ItemUtil.createItem(Material.BARRIER, "&cRemove Trail"), Rank.MEMBER, 24),
+    NONE("None", ItemUtil.createItem(Material.AIR), Rank.MEMBER, 25);
 
     String name;
     ItemStack stack;

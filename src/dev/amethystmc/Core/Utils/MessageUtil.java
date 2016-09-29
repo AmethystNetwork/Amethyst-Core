@@ -86,7 +86,7 @@ public class MessageUtil
 
     }
 
-    public static void sendStaffMessage(Player p, String... msg)
+    /*public static void sendStaffMessage(Player p, String... msg)
     {
 
         for (String message : msg)
@@ -101,7 +101,7 @@ public class MessageUtil
 
         }
 
-    }
+    }*/
 
     public static void broadcastTitleMessage(String title, String subtitle, int fadeIn, int stay, int fadeOut)
     {
