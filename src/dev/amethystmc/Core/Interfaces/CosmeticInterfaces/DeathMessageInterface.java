@@ -1,6 +1,6 @@
 package dev.amethystmc.Core.Interfaces.CosmeticInterfaces;
 
-import dev.amethystmc.Core.Cosmetics.Tag;
+import dev.amethystmc.Core.Cosmetics.DeathMessage;
 import dev.amethystmc.Core.Interfaces.Interfaces;
 import dev.amethystmc.Core.Utils.InterfaceUtil;
 import dev.amethystmc.Core.Utils.ItemUtil;
@@ -11,15 +11,15 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 
 /**
- * Created by Ben on 9/27/2016.
+ * Created by Ben on 9/29/2016.
  */
-public class TagInterface extends InterfaceUtil
+public class DeathMessageInterface extends InterfaceUtil
 {
 
 
     @Override
     public String getName() {
-        return "Tags";
+        return "Death Message";
     }
 
     @Override
@@ -30,10 +30,10 @@ public class TagInterface extends InterfaceUtil
         inv.setItem(40, ItemUtil.createItem(Material.WOOD_DOOR, "&aGo Back"));
 
 
-        for (Tag tag : Tag.values())
+        for (DeathMessage deathMessage : DeathMessage.values())
         {
 
-            inv.setItem(tag.getSlot(), tag.getStack());
+            inv.setItem(deathMessage.getSlot(), deathMessage.getStack());
 
         }
 

@@ -24,9 +24,7 @@ public class CosmeticInterface extends InterfaceUtil
     @Override
     public void open(Player p) {
 
-        Inventory inv = Bukkit.createInventory(p, 54, getName());
-
-        inv.setItem(49, ItemUtil.createSkull(p.getName(), "&a&l&nCosmetic Info", "&c&nComing Soon..."));
+        Inventory inv = Bukkit.createInventory(p, 45, getName());
 
 
         for (Cosmetic cosmetic : Cosmetic.values())
@@ -61,6 +59,10 @@ public class CosmeticInterface extends InterfaceUtil
             case 14:
                 p.playSound(p.getLocation(), Sound.NOTE_PLING, 10, 10);
                 Interfaces.getTrailInterface().open(p);
+                break;
+            case 15:
+                p.playSound(p.getLocation(), Sound.NOTE_PLING, 10, 10);
+                Interfaces.getDeathMessageInterface().open(p);
                 break;
 
         }

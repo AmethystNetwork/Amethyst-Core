@@ -13,6 +13,7 @@ public class Interfaces
     private static GadgetInterface gadgetInterface = new GadgetInterface();
     private static TagInterface tagInterface = new TagInterface();
     private static ArrowTrailInterface trailInterface = new ArrowTrailInterface();
+    private static DeathMessageInterface deathMessageInterface = new DeathMessageInterface();
 
     public static CosmeticInterface getCosmeticInterface()
     {
@@ -46,6 +47,13 @@ public class Interfaces
     {
 
         return trailInterface;
+
+    }
+
+    public static DeathMessageInterface getDeathMessageInterface()
+    {
+
+        return deathMessageInterface;
 
     }
 

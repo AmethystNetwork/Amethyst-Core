@@ -13,7 +13,7 @@ public enum  Tag
 
     GOD("God", "&7[&6God&7]", ItemUtil.createItem(Material.NAME_TAG, "&7[&6God&7]"), 11),
     PVP("PVP", "&7[&3PVP&7]", ItemUtil.createItem(Material.NAME_TAG, "&7[&3PVP&7]"), 12),
-    EGIRL("EGirl", "&7[&dEGirl&7]", ItemUtil.createItem(Material.NAME_TAG, "&7[&dEGirl&7]"), 13),
+    EGIRL("EGirl", "&7[&5EGirl&7]", ItemUtil.createItem(Material.NAME_TAG, "&7[&5EGirl&7]"), 13),
     AMETHYST("Amethyst", "&7[&dAmethyst&7]", ItemUtil.createItem(Material.NAME_TAG, "&7[&dAmethyst&7]"), 14),
     TRYHARD("Tryhard", "&7[&cTryHard&7]", ItemUtil.createItem(Material.NAME_TAG, "&7[&cTryHard&7]"), 15),
     BOSS("Boss", "&7[&9Boss&7]", ItemUtil.createItem(Material.NAME_TAG, "&7[&9Boss&7]"), 20),

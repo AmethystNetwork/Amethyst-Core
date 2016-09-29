@@ -59,6 +59,14 @@ public class InventoryClickListener implements Listener
             Interfaces.getTrailInterface().click(p, slot);
 
         }
+
+        else if (name.equalsIgnoreCase(Interfaces.getDeathMessageInterface().getName()))
+        {
+
+            e.setCancelled(true);
+            Interfaces.getDeathMessageInterface().click(p, slot);
+
+        }
     }
 }
 

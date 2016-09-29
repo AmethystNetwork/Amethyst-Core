@@ -12,7 +12,13 @@ public enum DeathMessage
 {
 
     YOU_GOT_ME_THIS_TIME("You got me this time", "&bYou got me this time!", ItemUtil.createItem(Material.ANVIL, "&bYou got me this time!"), Rank.PREMIUM, 11),
-    YOLO("You Only Live Once", "&cYou Only Live Once!", ItemUtil.createItem(Material.ANVIL, "&cYou Only Live Once!"), Rank.PREMIUM, 12);
+    YOLO("You Only Live Once", "&cYou Only Live Once!", ItemUtil.createItem(Material.ANVIL, "&cYou Only Live Once!"), Rank.PREMIUM, 12),
+    I_JUST_GOT_REKT("I just got rekt", "&6I just got rekt!", ItemUtil.createItem(Material.ANVIL, "&6I just got rekt!"), Rank.PREMIUM, 13),
+    YOU_CANT_KILL_A_BOSS("You can't kill a boss", "&9You can't kill a boss!", ItemUtil.createItem(Material.ANVIL, "&9You can't kill a boss"), Rank.PREMIUM, 14),
+    WELP_I_DIED("Welp I died", "&aWelp I died", ItemUtil.createItem(Material.ANVIL, "&aWelp I died..."), Rank.PREMIUM, 15),
+    ILL_GET_YOU_NEXT_TIME("I'll get you next time", "&2I'll get you next time!", ItemUtil.createItem(Material.ANVIL, "&2I'll get you next time!"), Rank.PREMIUM, 20),
+    RIP("RIP", "&bRIP", ItemUtil.createItem(Material.ANVIL, "&bRIP"), Rank.PREMIUM, 21),
+    REMOVE("Remove", " ", ItemUtil.createItem(Material.BARRIER, "&cRemove your Death Message"), Rank.MEMBER, 22);
 
     String name;
     String deathMessage;

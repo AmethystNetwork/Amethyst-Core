@@ -11,13 +11,13 @@ import org.bukkit.inventory.ItemStack;
 public enum Gadget
 {
 
-    PAINTBALL_GUN("Paintball Gun", ItemUtil.createItem(Material.DIAMOND_BARDING, "&dPaintball Gun", "&7Required Rank: " + Rank.PREMIUM.getPrefix()), Rank.PREMIUM, 11),
-    EGG_CANNON("Egg Cannon", ItemUtil.createItem(Material.EGG, "&dEgg Cannon", "&7Required Rank: " + Rank.PREMIUM.getPrefix()), Rank.PREMIUM, 12),
-    JUMP_PAD("Jump Pad", ItemUtil.createItem(Material.GOLD_PLATE, "&dJump Pad", "&7Required Rank: " + Rank.PREMIUM.getPrefix()), Rank.PREMIUM, 13),
-    TNT_FOUNTAIN("TnT Fountain", ItemUtil.createItem(Material.TNT, "&dTnT Fountain", "&7Required Rank: " + Rank.PREMIUM.getPrefix()), Rank.PREMIUM, 14),
-    EXPLOSIVE_BOW("Explosive Bow", ItemUtil.createItem(Material.BOW, "&dExplosive Bow", "&7Required Rank: " + Rank.PREMIUM.getPrefix()), Rank.PREMIUM, 15),
-    FLYING_PIG("Flying Pig", ItemUtil.createItem(Material.SADDLE, "&dFlying Pig", "&7Required Rank: " + Rank.PREMIUM.getPrefix()), Rank.PREMIUM, 20),
-    FIREWORK("Firework", ItemUtil.createItem(Material.FIREWORK, "&dFirework", "&7Required Rank: " + Rank.PREMIUM.getPrefix()), Rank.PREMIUM, 21);
+    PAINTBALL_GUN("Paintball Gun", ItemUtil.createItem(Material.DIAMOND_BARDING, "&dPaintball Gun"), Rank.PREMIUM, 11),
+    EGG_CANNON("Egg Cannon", ItemUtil.createItem(Material.EGG, "&dEgg Cannon"), Rank.PREMIUM, 12),
+    JUMP_PAD("Jump Pad", ItemUtil.createItem(Material.GOLD_PLATE, "&dJump Pad"), Rank.PREMIUM, 13),
+    TNT_FOUNTAIN("TnT Fountain", ItemUtil.createItem(Material.TNT, "&dTnT Fountain"), Rank.PREMIUM, 14),
+    EXPLOSIVE_BOW("Explosive Bow", ItemUtil.createItem(Material.BOW, "&dExplosive Bow"), Rank.PREMIUM, 15),
+    FLYING_PIG("Flying Pig", ItemUtil.createItem(Material.SADDLE, "&dFlying Pig"), Rank.PREMIUM, 20),
+    FIREWORK("Firework", ItemUtil.createItem(Material.FIREWORK, "&dFirework"), Rank.PREMIUM, 21);
 
     String name;
     ItemStack stack;
