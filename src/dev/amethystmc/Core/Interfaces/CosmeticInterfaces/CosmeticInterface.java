@@ -26,8 +26,9 @@ public class CosmeticInterface extends InterfaceUtil
     @Override
     public void open(Player p) {
 
-        Inventory inv = Bukkit.createInventory(p, 45, getName());
         AmethystPlayer ap = new AmethystPlayer(p);
+
+        Inventory inv = Bukkit.createInventory(p, 45, getName());
 
         inv.setItem(Cosmetic.HATS.getSlot(), ItemUtil.createItem(Material.BEACON, "&e&l&nHats", " ", "&7&nDescription:", "&fSelect a super cool hat to wear", "&facross the whole network in all the lobbies!", " ", "&7&nCurrent Hat:", "&f" + ap.getHat().getName(), " ", "&7&nRequired Rank:", "&fPremium"));
         inv.setItem(Cosmetic.GADGETS.getSlot(), ItemUtil.createItem(Material.FIREWORK, "&e&l&nGadgets", " ", "&7&nDescription:", "&fThrow a party with some of these", "&ffun gadgets that work across the whole network!", " ", "&7&nCurrent Gadget:", "&f" + ap.getGadget().getName(), " ", "&7&nRequired Rank:", "&fPremium"));

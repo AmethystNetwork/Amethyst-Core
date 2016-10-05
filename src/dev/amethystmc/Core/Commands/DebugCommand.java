@@ -1,10 +1,12 @@
 package dev.amethystmc.Core.Commands;
 
 import dev.amethystmc.Core.Interfaces.Interfaces;
+import dev.amethystmc.Core.NPC.NPC;
 import dev.amethystmc.Core.Utils.CommandUtil;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.entity.Villager;
 
 /**
  * Created by Ben on 9/27/2016.
@@ -25,7 +27,7 @@ public class DebugCommand extends CommandUtil
         {
 
             Player p = (Player) sender;
-            Interfaces.getCosmeticInterface().open(p);
+            NPC.getVillagerNPC().spawnVillagerNPC(p.getLocation(), "&7[NPC] Test", "&dTest...", Villager.Profession.LIBRARIAN);
 
         }
 

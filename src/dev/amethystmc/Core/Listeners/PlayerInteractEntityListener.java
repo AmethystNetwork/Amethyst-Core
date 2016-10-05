@@ -1,0 +1,40 @@
+package dev.amethystmc.Core.Listeners;
+
+import dev.amethystmc.Core.Interfaces.Interfaces;
+import org.bukkit.entity.Entity;
+import org.bukkit.entity.Player;
+import org.bukkit.entity.Villager;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.player.PlayerInteractEntityEvent;
+
+/**
+ * Created by Ben on 10/5/2016.
+ */
+public class PlayerInteractEntityListener implements Listener
+{
+
+    @EventHandler
+    public void onPlayerInteractEntity(PlayerInteractEntityEvent e)
+    {
+
+        Player p = e.getPlayer();
+        Entity v = e.getRightClicked();
+
+        if (!(v instanceof Villager))
+            return;
+
+        Villager villager = (Villager) v;
+
+        if (villager.getCustomName().equalsIgnoreCase("&7[NPC] Test"))
+        {
+
+            e.setCancelled(true);
+            Interfaces.getCosmeticInterface().open(p);
+
+        }
+
+    }
+
+}
+
