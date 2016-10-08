@@ -56,6 +56,7 @@ public class HatInterface extends InterfaceUtil
                 p.getInventory().setHelmet(Hat.GLASS.getStack());
                 ap.setHat(Hat.GLASS);
                 MessageUtil.sendRawMessage(p, "&aYou have selected the &eGlass Hat&a!");
+                break;
 
             case 49:
                 p.playSound(p.getLocation(), Sound.DOOR_CLOSE, 10, 10);

@@ -3,6 +3,7 @@ package dev.amethystmc.Core.Commands;
 import dev.amethystmc.Core.Interfaces.Interfaces;
 import dev.amethystmc.Core.NPC.NPC;
 import dev.amethystmc.Core.Utils.CommandUtil;
+import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -27,7 +28,7 @@ public class DebugCommand extends CommandUtil
         {
 
             Player p = (Player) sender;
-            NPC.getVillagerNPC().spawnVillagerNPC(p.getLocation(), "&7[NPC] Test", "&dTest...", Villager.Profession.LIBRARIAN);
+            NPC.getVillagerNPC().spawnVillagerNPC(p.getLocation(), "&7&oCosmetics", "&d&lRight Click", "&e&l↓ Cosmetic Shop ↓", Villager.Profession.LIBRARIAN);
 
         }
 

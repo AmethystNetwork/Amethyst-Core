@@ -1,6 +1,7 @@
 package dev.amethystmc.Core.Listeners;
 
 import dev.amethystmc.Core.Interfaces.Interfaces;
+import dev.amethystmc.Core.Utils.MessageUtil;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.entity.Villager;
@@ -15,7 +16,7 @@ public class PlayerInteractEntityListener implements Listener
 {
 
     @EventHandler
-    public void onPlayerInteractEntity(PlayerInteractEntityEvent e)
+    public void onPlayerInteractEntityEvent(PlayerInteractEntityEvent e)
     {
 
         Player p = e.getPlayer();
@@ -26,7 +27,10 @@ public class PlayerInteractEntityListener implements Listener
 
         Villager villager = (Villager) v;
 
-        if (villager.getCustomName().equalsIgnoreCase("&7[NPC] Test"))
+        if (villager.getCustomName() == null)
+            return;
+
+        if (villager.getCustomName().equalsIgnoreCase(MessageUtil.colorize("&7&oCosmetics")))
         {
 
             e.setCancelled(true);

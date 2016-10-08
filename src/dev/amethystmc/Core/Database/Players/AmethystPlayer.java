@@ -1,6 +1,7 @@
 package dev.amethystmc.Core.Database.Players;
 
 import dev.amethystmc.Core.Cosmetics.*;
+import dev.amethystmc.Core.Cosmetics.ArrowTrails.Trail;
 import dev.amethystmc.Core.Database.DatabaseConnection;
 import dev.amethystmc.Core.Utils.MessageUtil;
 import org.bukkit.entity.Player;
@@ -27,16 +28,11 @@ public class AmethystPlayer {
     private ArrowTrail trail;
     private DeathMessage deathMessage;
 
+
     public AmethystPlayer(Player p)
     {
 
         this.p = p;
-
-        this.hat = Hat.NONE;
-        this.gadget = Gadget.NONE;
-        this.tag = Tag.NONE;
-        this.trail = ArrowTrail.NONE;
-        this.deathMessage = DeathMessage.NONE;
 
     }
 
@@ -264,7 +260,13 @@ public class AmethystPlayer {
     public Hat getHat()
     {
 
-        return hat;
+        if (hat == null) {
+            return Hat.NONE;
+        }
+
+        else {
+            return hat;
+        }
 
     }
 
@@ -278,7 +280,12 @@ public class AmethystPlayer {
     public Gadget getGadget()
     {
 
-        return gadget;
+        if (gadget == null)
+            return Gadget.NONE;
+
+        else {
+            return gadget;
+        }
 
     }
 
@@ -292,7 +299,12 @@ public class AmethystPlayer {
     public Tag getTag()
     {
 
-        return tag;
+        if (tag == null)
+            return Tag.NONE;
+
+        else {
+            return tag;
+        }
 
     }
 
@@ -306,7 +318,12 @@ public class AmethystPlayer {
     public ArrowTrail getTrail()
     {
 
-        return trail;
+        if (trail == null)
+            return ArrowTrail.NONE;
+
+        else {
+            return trail;
+        }
 
     }
 
@@ -320,7 +337,12 @@ public class AmethystPlayer {
     public DeathMessage getDeathMessage()
     {
 
-        return deathMessage;
+        if (deathMessage == null)
+            return DeathMessage.NONE;
+
+        else {
+            return deathMessage;
+        }
 
     }
 
