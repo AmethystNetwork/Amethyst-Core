@@ -3,7 +3,12 @@ package dev.amethystmc.Core.Cosmetics;
 import dev.amethystmc.Core.Database.Players.Rank;
 import dev.amethystmc.Core.Utils.ItemUtil;
 import org.bukkit.Material;
+import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.UUID;
 
 /**
  * Created by Ben on 9/27/2016.
@@ -60,6 +65,36 @@ public enum Gadget
     {
 
         return slot;
+
+    }
+
+    private static Map<UUID, Gadget> players = new HashMap<>();
+
+    public static void addGadget(Player p, Gadget g)
+    {
+
+        players.put(p.getUniqueId(), g);
+
+    }
+
+    public static void removeGadget(Player p)
+    {
+
+        players.remove(p.getUniqueId());
+
+    }
+
+    public static Gadget getGadget(Player p)
+    {
+
+        return players.get(p.getUniqueId());
+
+    }
+
+    public static boolean hasGadget(Player p)
+    {
+
+        return players.containsKey(p.getUniqueId());
 
     }
 

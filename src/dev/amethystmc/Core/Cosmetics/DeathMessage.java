@@ -3,7 +3,12 @@ package dev.amethystmc.Core.Cosmetics;
 import dev.amethystmc.Core.Database.Players.Rank;
 import dev.amethystmc.Core.Utils.ItemUtil;
 import org.bukkit.Material;
+import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.UUID;
 
 /**
  * Created by Ben on 9/27/2016.
@@ -70,6 +75,36 @@ public enum DeathMessage
     {
 
         return slot;
+
+    }
+
+    private static Map<UUID, DeathMessage> players = new HashMap<>();
+
+    public static void addDeathMessage(Player p, DeathMessage dm)
+    {
+
+        players.put(p.getUniqueId(), dm);
+
+    }
+
+    public static void removeDeathMessage(Player p)
+    {
+
+        players.remove(p.getUniqueId());
+
+    }
+
+    public static DeathMessage getDeathMessage(Player p)
+    {
+
+        return players.get(p.getUniqueId());
+
+    }
+
+    public static boolean hasDeathMessage(Player p)
+    {
+
+        return players.containsKey(p.getUniqueId());
 
     }
 

@@ -1,5 +1,7 @@
 package dev.amethystmc.Core.Listeners;
 
+import dev.amethystmc.Core.Cosmetics.Hat;
+import dev.amethystmc.Core.Database.Players.AmethystPlayer;
 import dev.amethystmc.Core.Interfaces.Interfaces;
 import dev.amethystmc.Core.Utils.MessageUtil;
 import org.bukkit.entity.Entity;
@@ -20,6 +22,7 @@ public class PlayerInteractEntityListener implements Listener
     {
 
         Player p = e.getPlayer();
+        AmethystPlayer ap = new AmethystPlayer(p);
         Entity v = e.getRightClicked();
 
         if (!(v instanceof Villager))

@@ -54,10 +54,93 @@ public class HatInterface extends InterfaceUtil
             case 11:
                 p.playSound(p.getLocation(), Sound.NOTE_PLING, 10, 10);
                 p.getInventory().setHelmet(Hat.GLASS.getStack());
-                ap.setHat(Hat.GLASS);
+                Hat.addHat(p, Hat.GLASS);
                 MessageUtil.sendRawMessage(p, "&aYou have selected the &eGlass Hat&a!");
                 break;
-
+            case 12:
+                p.playSound(p.getLocation(), Sound.NOTE_PLING, 10, 10);
+                p.getInventory().setHelmet(Hat.SPONGE.getStack());
+                Hat.addHat(p, Hat.SPONGE);
+                MessageUtil.sendRawMessage(p, "&aYou have selected the &eSponge Hat&a!");
+                break;
+            case 13:
+                p.playSound(p.getLocation(), Sound.NOTE_PLING, 10, 10);
+                p.getInventory().setHelmet(Hat.CACTUS.getStack());
+                Hat.addHat(p, Hat.CACTUS);
+                MessageUtil.sendRawMessage(p, "&aYou have selected the &eCactus Hat&a!");
+                break;
+            case 14:
+                p.playSound(p.getLocation(), Sound.NOTE_PLING, 10, 10);
+                p.getInventory().setHelmet(Hat.GRASS.getStack());
+                Hat.addHat(p, Hat.GRASS);
+                MessageUtil.sendRawMessage(p, "&aYou have selected the &eGrass Hat&a!");
+                break;
+            case 15:
+                p.playSound(p.getLocation(), Sound.NOTE_PLING, 10, 10);
+                p.getInventory().setHelmet(Hat.IRON.getStack());
+                Hat.addHat(p, Hat.IRON);
+                MessageUtil.sendRawMessage(p, "&aYou have selected the &eIron Hat&a!");
+                break;
+            case 20:
+                p.playSound(p.getLocation(), Sound.NOTE_PLING, 10, 10);
+                p.getInventory().setHelmet(Hat.GOLD.getStack());
+                Hat.addHat(p, Hat.GOLD);
+                MessageUtil.sendRawMessage(p, "&aYou have selected the &eGold Hat&a!");
+                break;
+            case 21:
+                p.playSound(p.getLocation(), Sound.NOTE_PLING, 10, 10);
+                p.getInventory().setHelmet(Hat.DIAMOND.getStack());
+                Hat.addHat(p, Hat.DIAMOND);
+                MessageUtil.sendRawMessage(p, "&aYou have selected the &eDiamond Hat&a!");
+                break;
+            case 22:
+                p.playSound(p.getLocation(), Sound.NOTE_PLING, 10, 10);
+                p.getInventory().setHelmet(Hat.EMERALD.getStack());
+                Hat.addHat(p, Hat.EMERALD);
+                MessageUtil.sendRawMessage(p, "&aYou have selected the &eEmerald Hat&a!");
+                break;
+            case 23:
+                p.playSound(p.getLocation(), Sound.NOTE_PLING, 10, 10);
+                p.getInventory().setHelmet(Hat.WOOD.getStack());
+                Hat.addHat(p, Hat.WOOD);
+                MessageUtil.sendRawMessage(p, "&aYou have selected the &eWood Hat&a!");
+                break;
+            case 24:
+                p.playSound(p.getLocation(), Sound.NOTE_PLING, 10, 10);
+                p.getInventory().setHelmet(Hat.WOOL.getStack());
+                Hat.addHat(p, Hat.WOOL);
+                MessageUtil.sendRawMessage(p, "&aYou have selected the &eWool Hat&a!");
+                break;
+            case 29:
+                p.playSound(p.getLocation(), Sound.NOTE_PLING, 10, 10);
+                p.getInventory().setHelmet(Hat.BRICK.getStack());
+                Hat.addHat(p, Hat.BRICK);
+                MessageUtil.sendRawMessage(p, "&aYou have selected the &eBrick Hat&a!");
+                break;
+            case 30:
+                p.playSound(p.getLocation(), Sound.NOTE_PLING, 10, 10);
+                p.getInventory().setHelmet(Hat.BEDROCK.getStack());
+                Hat.addHat(p, Hat.BEDROCK);
+                MessageUtil.sendRawMessage(p, "&aYou have selected the &eBedrock Hat&a!");
+                break;
+            case 31:
+                p.playSound(p.getLocation(), Sound.NOTE_PLING, 10, 10);
+                p.getInventory().setHelmet(Hat.OBSIDIAN.getStack());
+                Hat.addHat(p, Hat.OBSIDIAN);
+                MessageUtil.sendRawMessage(p, "&aYou have selected the &eObsidian Hat&a!");
+                break;
+            case 32:
+                p.playSound(p.getLocation(), Sound.NOTE_PLING, 10, 10);
+                p.getInventory().setHelmet(Hat.GLOWSTONE.getStack());
+                Hat.addHat(p, Hat.GLOWSTONE);
+                MessageUtil.sendRawMessage(p, "&aYou have selected the &eGlowstone Hat&a!");
+                break;
+            case 33:
+                p.playSound(p.getLocation(), Sound.NOTE_PLING, 10, 10);
+                p.getInventory().setHelmet(Hat.REDSTONE.getStack());
+                Hat.addHat(p, Hat.REDSTONE);
+                MessageUtil.sendRawMessage(p, "&aYou have selected the &eRedstone Hat&a!");
+                break;
             case 49:
                 p.playSound(p.getLocation(), Sound.DOOR_CLOSE, 10, 10);
                 Interfaces.getCosmeticInterface().open(p);

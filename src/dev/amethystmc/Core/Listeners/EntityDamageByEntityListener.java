@@ -18,7 +18,7 @@ public class EntityDamageByEntityListener implements Listener
         Entity damager = e.getDamager();
         Entity damaged = e.getEntity();
 
-        if (damager instanceof Player && damaged instanceof Villager || damaged instanceof Bat || damaged instanceof ArmorStand)
+        if (damager instanceof Player && damaged instanceof Villager || damaged instanceof Zombie || damaged instanceof ArmorStand)
         {
 
             e.setCancelled(true);

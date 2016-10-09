@@ -7,28 +7,28 @@ import net.minecraft.server.v1_8_R3.NBTTagCompound;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.craftbukkit.v1_8_R3.entity.CraftEntity;
-import org.bukkit.entity.*;
+import org.bukkit.entity.ArmorStand;
+import org.bukkit.entity.Zombie;
 import org.bukkit.scheduler.BukkitRunnable;
 
 /**
- * Created by Ben on 10/4/2016.
+ * Created by Ben on 10/9/2016.
  */
-public class VillagerNPC
+public class ZombieNPC
 {
 
-    public void spawnVillagerNPC(Location loc, String displayName, String nameLine1, String nameLine2, Villager.Profession profession, boolean isNew) {
+    public void spawnZombieNPC(Location loc, String displayName, String nameLine1, String nameLine2, boolean isNew) {
 
-        final Villager v = (Villager) Bukkit.getWorld("world").spawn(loc, Villager.class);
-        Entity nms = ((CraftEntity) v).getHandle();
+        final Zombie z = (Zombie) Bukkit.getWorld("world").spawn(loc, Zombie.class);
+        Entity nms = ((CraftEntity) z).getHandle();
         NBTTagCompound tag = new NBTTagCompound();
         nms.c(tag);
         tag.setInt("NoAI", 1);
         nms.f(tag);
 
-        v.setProfession(profession);
-        v.setCustomName(MessageUtil.colorize(displayName));
+        z.setCustomName(MessageUtil.colorize(displayName));
 
-        Location holoLoc = v.getLocation().add(0, 0.07, 0);
+        Location holoLoc = z.getLocation().add(0, 0.07, 0);
 
         ArmorStand a = (ArmorStand) Bukkit.getWorld("world").spawn(holoLoc, ArmorStand.class);
         a.setGravity(false);
@@ -81,4 +81,5 @@ public class VillagerNPC
     }
 
 }
+
 

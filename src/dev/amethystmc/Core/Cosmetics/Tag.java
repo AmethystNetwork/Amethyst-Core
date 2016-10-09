@@ -4,7 +4,12 @@ import dev.amethystmc.Core.Database.Players.Rank;
 import dev.amethystmc.Core.Utils.ItemUtil;
 import dev.amethystmc.Core.Utils.MessageUtil;
 import org.bukkit.Material;
+import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.UUID;
 
 /**
  * Created by Ben on 9/27/2016.
@@ -72,6 +77,36 @@ public enum  Tag
     {
 
         return slot;
+
+    }
+
+    private static Map<UUID, Tag> players = new HashMap<>();
+
+    public static void addTag(Player p, Tag t)
+    {
+
+        players.put(p.getUniqueId(), t);
+
+    }
+
+    public static void removeTag(Player p)
+    {
+
+        players.remove(p.getUniqueId());
+
+    }
+
+    public static Tag getTag(Player p)
+    {
+
+        return players.get(p.getUniqueId());
+
+    }
+
+    public static boolean hasTag(Player p)
+    {
+
+        return players.containsKey(p.getUniqueId());
 
     }
 

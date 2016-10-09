@@ -1,9 +1,16 @@
 package dev.amethystmc.Core.Cosmetics;
 
+import dev.amethystmc.Core.Cosmetics.ArrowTrails.Trail;
 import dev.amethystmc.Core.Database.Players.Rank;
 import dev.amethystmc.Core.Utils.ItemUtil;
+import net.minecraft.server.v1_8_R3.EnumParticle;
 import org.bukkit.Material;
+import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.UUID;
 
 /**
  * Created by Ben on 9/26/2016.
@@ -68,6 +75,36 @@ public enum Hat
     {
 
         return slot;
+
+    }
+
+    private static Map<UUID, Hat> players = new HashMap<>();
+
+    public static void addHat(Player p, Hat h)
+    {
+
+        players.put(p.getUniqueId(), h);
+
+    }
+
+    public static void removeHat(Player p)
+    {
+
+        players.remove(p.getUniqueId());
+
+    }
+
+    public static Hat getHat(Player p)
+    {
+
+        return players.get(p.getUniqueId());
+
+    }
+
+    public static boolean hasHat(Player p)
+    {
+
+        return players.containsKey(p.getUniqueId());
 
     }
 

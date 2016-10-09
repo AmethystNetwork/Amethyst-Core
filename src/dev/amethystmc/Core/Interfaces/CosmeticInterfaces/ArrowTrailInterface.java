@@ -55,71 +55,61 @@ public class ArrowTrailInterface extends InterfaceUtil
             case 11:
                 p.playSound(p.getLocation(), Sound.NOTE_PLING, 10, 10);
                 Trail.addTrail(p, EnumParticle.FLAME);
-                ap.setTrail(ArrowTrail.FLAME);
-                p.closeInventory();
+                ArrowTrail.addTrail(p, ArrowTrail.FLAME);
                 MessageUtil.sendRawMessage(p, "&aYou have selected the &eFlame Trail");
                 break;
             case 12:
                 p.playSound(p.getLocation(), Sound.NOTE_PLING, 10, 10);
                 Trail.addTrail(p, EnumParticle.DRIP_WATER);
-                ap.setTrail(ArrowTrail.WATER);
-                p.closeInventory();
+                ArrowTrail.addTrail(p, ArrowTrail.WATER);
                 MessageUtil.sendRawMessage(p, "&aYou have selected the &eWater Trail");
                 break;
             case 13:
                 p.playSound(p.getLocation(), Sound.NOTE_PLING, 10, 10);
                 Trail.addTrail(p, EnumParticle.SLIME);
-                ap.setTrail(ArrowTrail.SLIME);
-                p.closeInventory();
+                ArrowTrail.addTrail(p, ArrowTrail.SLIME);
                 MessageUtil.sendRawMessage(p, "&aYou have selected the &eSlime Trail");
                 break;
             case 14:
                 p.playSound(p.getLocation(), Sound.NOTE_PLING, 10, 10);
                 Trail.addTrail(p, EnumParticle.FIREWORKS_SPARK);
-                ap.setTrail(ArrowTrail.FIREWORK);
-                p.closeInventory();
+                ArrowTrail.addTrail(p, ArrowTrail.FIREWORK);
                 MessageUtil.sendRawMessage(p, "&aYou have selected the &eFirework Trail");
                 break;
             case 15:
                 p.playSound(p.getLocation(), Sound.NOTE_PLING, 10, 10);
                 Trail.addTrail(p, EnumParticle.SMOKE_NORMAL);
-                ap.setTrail(ArrowTrail.SMOKE);
-                p.closeInventory();
+                ArrowTrail.addTrail(p, ArrowTrail.SMOKE);
                 MessageUtil.sendRawMessage(p, "&aYou have selected the &eSmoke Trail");
                 break;
             case 20:
                 p.playSound(p.getLocation(), Sound.NOTE_PLING, 10, 10);
                 Trail.addTrail(p, EnumParticle.SNOW_SHOVEL);
-                ap.setTrail(ArrowTrail.SNOW);
-                p.closeInventory();
+                ArrowTrail.addTrail(p, ArrowTrail.SNOW);
                 MessageUtil.sendRawMessage(p, "&aYou have selected the &eSnow Trail");
                 break;
             case 21:
                 p.playSound(p.getLocation(), Sound.NOTE_PLING, 10, 10);
                 Trail.addTrail(p, EnumParticle.HEART);
-                ap.setTrail(ArrowTrail.HEART);
-                p.closeInventory();
+                ArrowTrail.addTrail(p, ArrowTrail.HEART);
                 MessageUtil.sendRawMessage(p, "&aYou have selected the &eHeart Trail");
                 break;
             case 22:
                 p.playSound(p.getLocation(), Sound.NOTE_PLING, 10, 10);
                 Trail.addTrail(p, EnumParticle.VILLAGER_HAPPY);
-                ap.setTrail(ArrowTrail.EMERALD);
-                p.closeInventory();
+                ArrowTrail.addTrail(p, ArrowTrail.EMERALD);
                 MessageUtil.sendRawMessage(p, "&aYou have selected the &eEmerald Trail");
                 break;
             case 23:
                 p.playSound(p.getLocation(), Sound.NOTE_PLING, 10, 10);
                 Trail.addTrail(p, EnumParticle.ENCHANTMENT_TABLE);
-                ap.setTrail(ArrowTrail.ENCHANTMENT);
-                p.closeInventory();
+                ArrowTrail.addTrail(p, ArrowTrail.ENCHANTMENT);
                 MessageUtil.sendRawMessage(p, "&aYou have selected the &eEnchantment Trail");
                 break;
             case 24:
                 p.playSound(p.getLocation(), Sound.NOTE_PLING, 10, 10);
                 Trail.removeTrail(p);
-                ap.setTrail(ArrowTrail.NONE);
-                p.closeInventory();
+                ArrowTrail.addTrail(p, ArrowTrail.NONE);
                 MessageUtil.sendRawMessage(p, "&cYou have removed your trail");
                 break;
             case 40:

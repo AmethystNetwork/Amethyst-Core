@@ -22,12 +22,6 @@ public class AmethystPlayer {
     List<Player> staffChat = new ArrayList<>();
     List<String> staffMembers = new ArrayList<>();
 
-    private Hat hat;
-    private Gadget gadget;
-    private Tag tag;
-    private ArrowTrail trail;
-    private DeathMessage deathMessage;
-
 
     public AmethystPlayer(Player p)
     {
@@ -249,102 +243,6 @@ public class AmethystPlayer {
 
         }
     }*/
-
-    public void setHat(Hat hat)
-    {
-
-        this.hat = hat;
-
-    }
-
-    public Hat getHat()
-    {
-
-        if (hat == null) {
-            return Hat.NONE;
-        }
-
-        else {
-            return hat;
-        }
-
-    }
-
-    public void setGadget(Gadget gadget)
-    {
-
-        this.gadget = gadget;
-
-    }
-
-    public Gadget getGadget()
-    {
-
-        if (gadget == null)
-            return Gadget.NONE;
-
-        else {
-            return gadget;
-        }
-
-    }
-
-    public void setTag(Tag tag)
-    {
-
-        this.tag = tag;
-
-    }
-
-    public Tag getTag()
-    {
-
-        if (tag == null)
-            return Tag.NONE;
-
-        else {
-            return tag;
-        }
-
-    }
-
-    public void setTrail(ArrowTrail trail)
-    {
-
-        this.trail = trail;
-
-    }
-
-    public ArrowTrail getTrail()
-    {
-
-        if (trail == null)
-            return ArrowTrail.NONE;
-
-        else {
-            return trail;
-        }
-
-    }
-
-    public void setDeathMessage(DeathMessage deathMessage)
-    {
-
-        this.deathMessage = deathMessage;
-
-    }
-
-    public DeathMessage getDeathMessage()
-    {
-
-        if (deathMessage == null)
-            return DeathMessage.NONE;
-
-        else {
-            return deathMessage;
-        }
-
-    }
 
 }
 

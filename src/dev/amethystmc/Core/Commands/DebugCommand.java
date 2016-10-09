@@ -28,7 +28,7 @@ public class DebugCommand extends CommandUtil
         {
 
             Player p = (Player) sender;
-            NPC.getVillagerNPC().spawnVillagerNPC(p.getLocation(), "&7&oCosmetics", "&d&lRight Click", "&e&l↓ Cosmetic Shop ↓", Villager.Profession.LIBRARIAN);
+            NPC.getVillagerNPC().spawnVillagerNPC(p.getLocation(), "&7&oCosmetics", "&d&lRight Click", "&e&l↓ Cosmetic Shop ↓", Villager.Profession.LIBRARIAN, true);
 
         }
 
