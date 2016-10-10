@@ -31,8 +31,8 @@ public enum Hat
     BRICK("Brick", ItemUtil.createItem(Material.BRICK, "&dCactus Hat"), Rank.PREMIUM, 29),
     BEDROCK("Bedrock", ItemUtil.createItem(Material.BEDROCK, "&dBedrock Hat"), Rank.PREMIUM, 30),
     OBSIDIAN("Obsidian", ItemUtil.createItem(Material.OBSIDIAN, "&dObsidian Hat"), Rank.PREMIUM, 31),
-    GLOWSTONE("GlowStone", ItemUtil.createItem(Material.GLOWSTONE, "&dGlowstone Hat"), Rank.PREMIUM, 32),
-    REDSTONE("Redstone", ItemUtil.createItem(Material.REDSTONE_BLOCK, "&dRedstone Hat"), Rank.PREMIUM, 33),
+    PATCLONE("PatClone", ItemUtil.createSkull("PatClone", "&dPatClone Hat"), Rank.PREMIUM, 32),
+    DEVGOLEM("DevGolem", ItemUtil.createSkull("DevGolem", "&dDevGolem Hat"), Rank.PREMIUM, 33),
     NONE("None", ItemUtil.createItem(Material.AIR), Rank.MEMBER, 34);
 
     String name;

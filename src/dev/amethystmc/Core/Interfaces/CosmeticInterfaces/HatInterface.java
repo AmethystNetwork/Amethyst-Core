@@ -131,15 +131,15 @@ public class HatInterface extends InterfaceUtil
                 break;
             case 32:
                 p.playSound(p.getLocation(), Sound.NOTE_PLING, 10, 10);
-                p.getInventory().setHelmet(Hat.GLOWSTONE.getStack());
-                Hat.addHat(p, Hat.GLOWSTONE);
-                MessageUtil.sendRawMessage(p, "&aYou have selected the &eGlowstone Hat&a!");
+                p.getInventory().setHelmet(Hat.PATCLONE.getStack());
+                Hat.addHat(p, Hat.PATCLONE);
+                MessageUtil.sendRawMessage(p, "&aYou have selected the &ePatClone Hat&a!");
                 break;
             case 33:
                 p.playSound(p.getLocation(), Sound.NOTE_PLING, 10, 10);
-                p.getInventory().setHelmet(Hat.REDSTONE.getStack());
-                Hat.addHat(p, Hat.REDSTONE);
-                MessageUtil.sendRawMessage(p, "&aYou have selected the &eRedstone Hat&a!");
+                p.getInventory().setHelmet(Hat.DEVGOLEM.getStack());
+                Hat.addHat(p, Hat.DEVGOLEM);
+                MessageUtil.sendRawMessage(p, "&aYou have selected the &eDevGolem Hat&a!");
                 break;
             case 49:
                 p.playSound(p.getLocation(), Sound.DOOR_CLOSE, 10, 10);
