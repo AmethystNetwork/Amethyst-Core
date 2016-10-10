@@ -38,6 +38,18 @@ public class MessageUtil
 
     }
 
+    public static void sendBlankMessage(Player p, String... msg)
+    {
+
+        for (String message : msg)
+        {
+
+            p.sendMessage(colorize(message));
+
+        }
+
+    }
+
     public static void sendRawMessage(Player p, String... msg)
     {
 

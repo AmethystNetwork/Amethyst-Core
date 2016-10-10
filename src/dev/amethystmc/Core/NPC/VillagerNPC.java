@@ -1,14 +1,19 @@
 package dev.amethystmc.Core.NPC;
 
 import dev.amethystmc.Core.Core;
+import dev.amethystmc.Core.Utils.ItemUtil;
 import dev.amethystmc.Core.Utils.MessageUtil;
 import net.minecraft.server.v1_8_R3.Entity;
 import net.minecraft.server.v1_8_R3.NBTTagCompound;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
+import org.bukkit.Material;
 import org.bukkit.craftbukkit.v1_8_R3.entity.CraftEntity;
 import org.bukkit.entity.*;
 import org.bukkit.scheduler.BukkitRunnable;
+import org.bukkit.util.Vector;
+
+import java.util.Random;
 
 /**
  * Created by Ben on 10/4/2016.
