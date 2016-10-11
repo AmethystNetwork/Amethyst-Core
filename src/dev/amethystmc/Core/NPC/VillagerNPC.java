@@ -3,9 +3,11 @@ package dev.amethystmc.Core.NPC;
 import dev.amethystmc.Core.Core;
 import dev.amethystmc.Core.Utils.ItemUtil;
 import dev.amethystmc.Core.Utils.MessageUtil;
+import dev.amethystmc.Core.Utils.ParticleUtil;
 import net.minecraft.server.v1_8_R3.Entity;
 import net.minecraft.server.v1_8_R3.NBTTagCompound;
 import org.bukkit.Bukkit;
+import org.bukkit.Effect;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.craftbukkit.v1_8_R3.entity.CraftEntity;
@@ -59,6 +61,8 @@ public class VillagerNPC
             a3.setVisible(false);
             a3.setCustomNameVisible(true);
             a3.setCustomName(MessageUtil.colorize("&b&lNEW!"));
+
+            final Location particleLoc = a3.getEyeLocation().add(0, 0.5, 0);
 
             new BukkitRunnable() {
 
