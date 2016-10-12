@@ -1,16 +1,9 @@
 package dev.amethystmc.Core.Database.Players;
 
-import dev.amethystmc.Core.Cosmetics.*;
-import dev.amethystmc.Core.Cosmetics.ArrowTrails.Trail;
-import dev.amethystmc.Core.Database.DatabaseConnection;
-import dev.amethystmc.Core.Utils.MessageUtil;
 import org.bukkit.entity.Player;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 /**
  * Created by Ben on 9/26/2016.
