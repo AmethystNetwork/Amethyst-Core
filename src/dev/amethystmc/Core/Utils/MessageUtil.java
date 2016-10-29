@@ -20,7 +20,7 @@ public class MessageUtil
 {
 
     public static String PREFIX = colorize("&dAmethystMC &7» ");
-    public static String DEV_PREFIX = colorize("&dAmethyst &2&lD&d&lE&e&lV &7» ");
+    public static String DEV_PREFIX = colorize("&dAmethyst &c&lDEV &7» ");
     public static String STAFF_PREFIX = colorize("&b&lSTAFF &7» ");
 
     public static void sendNoPermissionMessage(Player p, Rank rank)

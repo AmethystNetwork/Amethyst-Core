@@ -6,20 +6,20 @@ package dev.amethystmc.Core.Database.Players;
 public enum Rank
 {
 
-    OWNER("Owner", "&4[Owner]", "&f", 5, 10),
-    SRADMIN("SrAdmin", "&4[Sr.Admin]", "&f", 5, 9),
-    DEV("Dev", "&c[Dev]", "&f", 5, 10),
-    ADMIN("Admin", "&c[Admin]", "&f", 5, 8),
-    MOD("Mod", "&6[Mod]", "&f", 5, 7),
-    JRMOD("JrMod", "&a[Jr.Mod]", "&f", 5, 6),
+    OWNER("Owner", "&4[Owner] &f", "&f", 5, 10),
+    SRADMIN("SrAdmin", "&4[Sr.Admin] &f", "&f", 5, 9),
+    DEV("Dev", "&c[Dev] &f", "&f", 5, 10),
+    ADMIN("Admin", "&c[Admin] &f", "&f", 5, 8),
+    MOD("Mod", "&6[Mod] &f", "&f", 5, 7),
+    JRMOD("JrMod", "&a[Jr.Mod] &f", "&f", 5, 6),
 
-    JRDEV("JrDev", "&c[Jr.Dev]", "&f", 5, 5),
-    VIP("VIP", "&5[VIP]", "&f", 5, 5),
-    BUILDER("Builder", "&2[Builder]", "&f", 5, 5),
+    JRDEV("JrDev", "&c[Jr.Dev] &f", "&f", 5, 5),
+    VIP("VIP", "&5[VIP] &f", "&f", 5, 5),
+    BUILDER("Builder", "&2[Builder] &f", "&f", 5, 5),
 
-    PLATINUM("Platinum", "&9[Platinum]", "&f", 4, 4),
-    ELITE("Elite", "&3[Elite]", "&f", 3, 3),
-    PREMIUM("Premium", "&b[Premium]", "&f", 2, 2),
+    PLATINUM("Platinum", "&9[Platinum] &f", "&f", 4, 4),
+    ELITE("Elite", "&3[Elite] &f", "&f", 3, 3),
+    PREMIUM("Premium", "&b[Premium] &f", "&f", 2, 2),
 
     MEMBER("Member", "&7", "&7", 1, 1);
 

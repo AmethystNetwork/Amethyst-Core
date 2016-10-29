@@ -8,6 +8,7 @@ public class NPC
 
     private static VillagerNPC villagerNPC = new VillagerNPC();
     private static ZombieNPC zombieNPC = new ZombieNPC();
+    private static HologramNPC hologramNPC = new HologramNPC();
 
     public static VillagerNPC getVillagerNPC()
     {
@@ -20,6 +21,13 @@ public class NPC
     {
 
         return zombieNPC;
+
+    }
+
+    public static HologramNPC getHologramNPC()
+    {
+
+        return hologramNPC;
 
     }
 
